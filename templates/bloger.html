@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{news.Title}}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="header"> 
+        <h2>Theo Web</h2>
+        <!-- <a href="/{{rand}}/admin">Post</a> -->
+    </div>
+    <center><h2 style="text-decoration: underline; font-size: 1.9vw;">{{news.Title}}</h2></center>
+    <div class="mncontent">
+        <center><img src="../static/blgImg/{{news.IMG}}" alt="Theo news" height="600px"></center>
+        <p>{{news.Descriptions}}</p>        
+    </div>
+    
+    
+</body>
+</html>
